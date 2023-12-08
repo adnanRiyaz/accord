@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="app.css">
+    <title>Mountech_accordion</title>
+</head>
+
+<body>
+    <!--outer-->
+    <div class="container-fluid">
+
+        <!--heading-top-->
+        <h3 id="faq">FAQ</h3>
+
+        <!--content-outer-->
+        <div class="d-flex" id="main-cont">
+
+            <!--left div-->
+            <div id="outer">
+                <div id="fix">
+                    <h1><a class="all" id="first" href="#l1">General</a></h1>
+                    <h1><a class="all" id="second" href="#l2">Orders</a></h1>
+                    <h1><a class="all" id="third" href="#l3">Shipping & Returns</a></h1>
+                    <h1><a class="all" id="fourth" href="#l4">Gifting</a></h1>
+                    <h1><a class="all" id="fifth" href="#l5">Products</a></h1>
+                </div>
+            </div>
+
+            <!--right-div-->
+            <div id="right">
+
+                <!--wrapper-->
+                <div id="l1">
+
+                    <h2 class="i-head">General</h2>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="general()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    What is Material?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne1" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Material creates thoughtfully designed things for your
+                                    kitchen, transforming everyday objects into items that bring you joy. No more
+                                    hand-me-down melted plastic tools or junk drawers full of I-used-them-once items
+                                    (avocado slicer, anyone?). We're obsessed with good design, high-performing
+                                    products, and making "keep for life" kitchenware.<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="general()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    How can I contact Material?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">We’d love to hear from you! Send any questions or thoughts
+                                    to hello@materialkitchen.com, or tag @materialkitchen.<br><br></div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="general()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Where can I purchase Material Items?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Our full assortment is available at&nbsp;<a
+                                        href="https://materialkitchen.com/">materialkitchen.com</a>. You can also find
+                                    us at retailers such as West Elm, Anthropologie and Verishop.<br><br></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <hr>
+
+                <div id="l2">
+                    <h2 class="i-head">Orders</h2>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="orders()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    How can I track my order?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Email us at hello@materialkitchen.com and we’ll provide you
+                                    with an update.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="orders()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Can I purchase individual items?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">If you are interested in purchasing a single item, feel free
+                                    to reach out to us at hello@materialkitchen.com.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="orders()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    What type of payment do you accept?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">We accept Visa, Mastercard, American Express, JCB, Discover,
+                                    and Diners Club debit and credit cards. We also accept PayPal and Apple Pay.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <hr>
+
+                <div id="l3">
+                    <h2 class="i-head">Shipping & Returns</h2>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="ship()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Where do you ship?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">We currently ship to addresses in the continental United
+                                    States and Canada. If you‘re interested in placing an order outside the U.S. or
+                                    Canada, email hello@materialkitchen.com.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="ship()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseEight"
+                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    How much is shipping?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseEight" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">We offer free UPS ground shipping on orders $100 or more
+                                    within the United States. For Canada, we collect shipping payment that also covers
+                                    duties and customs.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="ship()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    What is your return policy?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseNine" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">We offer easy returns and exchanges on items within 60 days
+                                    of receipt. If you’d like to make a return or exchange, please use our automated
+                                    portal found at https://material.loopreturns.com/#/.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <hr>
+
+                <div id="l4">
+                    <h2 class="i-head">Gifting</h2>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="gift()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    How do I give Material as a gift?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTen" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">First, that makes you a very tasteful gift-giver. Just enter
+                                    the recipient’s shipping address into the designated fields during checkout. If you
+                                    don’t know what you want to gift, keep it simple and purchase a gift card so they
+                                    can select their Material themselves.</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <hr>
+                <hr>
+
+                <div id="l5">
+                    <h2 class="i-head">Products</h2>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="products()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven"
+                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Are Material products dishwasher safe?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseEleven" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Our knives and wooden products, such as The Wood Spoon and
+                                    The Angled Board, should be hand-washed. All other products can be cleaned in the
+                                    dishwasher.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="products()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve"
+                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Do Material products have a warranty?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwelve" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">All of our products are designed to last. If one of your
+                                    items is damaged, email hello@materialkitchen.com so we can fix or replace it. The
+                                    only items that we do not offer a lifetime guarantee on are our limited edition
+                                    products, given that they are one-time offerings.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="products()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    How should I care for my Material knives?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThirteen" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Washing: Hand-washing your knives with a non-abrasive sponge
+                                    is the way to go. Steer clear of the dishwasher to prevent damage to the blade and
+                                    handle. Sharpening: We recommend an easy-to-use knife sharpener or if your knife
+                                    needs an extra bit of TLC, a yearly professional sharpening. We also recommend
+                                    honing your knife after 4-5 heavy duty uses, or as soon as you find yourself
+                                    struggling to cut through a tomato with ease.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="products()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    How are Material knives made? </button>
+                            </h2>
+                            <div id="flush-collapseFourteen" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Our knives are made from three layers of Japanese stainless
+                                    steel. The outer two layers are corrosion-resistant steel that make the knives easy
+                                    to care for (no need to wipe down immediately), and the inner layer is a high-carbon
+                                    steel that provides superior durability and strength for excellent cutting
+                                    performance. Our knives have a Rockwell hardness of 59 ± 1, are ice-tempered to
+                                    increase hardness, and feature a 26-degree blade to ensure optimal sharpness. Both
+                                    have stain-resistant handles and a smooth, hand-finished bolster that provides a
+                                    firm and comfortable</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onclick="products()" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Where are Material products made?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFifteen" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">We source and manufacture our products and materials from
+                                    all over the world including the U.S., Europe, South Korea and China. We work to
+                                    ensure that all our manufacturers are both ethically and environmentally compliant.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script>
+        function general() {
+            let x = document.getElementsByClassName("all");
+            const arr = Array.from(x);
+            arr.forEach((element) => {
+            element.classList.remove("myclass");
+           });
+            let p = document.getElementById("first");
+            p.classList.add("myclass")
+        }
+        function orders() {
+            let x = document.getElementsByClassName("all");
+            const arr = Array.from(x);
+            arr.forEach((element) => {
+            element.classList.remove("myclass");
+           });
+            let ele = document.getElementById("second");
+            ele.classList.add("myclass")
+
+        }
+        function ship() {
+            let x = document.getElementsByClassName("all");
+            const arr = Array.from(x);
+            arr.forEach((element) => {
+            element.classList.remove("myclass");
+           });
+            let ele = document.getElementById("third");
+            ele.classList.add("myclass")
+        }
+        function gift() {
+            let x = document.getElementsByClassName("all");
+            const arr = Array.from(x);
+            arr.forEach((element) => {
+            element.classList.remove("myclass");
+           });
+            let ele = document.getElementById("fourth");
+            ele.classList.add("myclass")
+        }
+        function products() {
+            let x = document.getElementsByClassName("all");
+            const arr = Array.from(x);
+            arr.forEach((element) => {
+            element.classList.remove("myclass");
+           });
+            let ele = document.getElementById("fifth");
+            ele.classList.add("myclass")
+        }
+    </script>
+
+</body>
+
+</html>

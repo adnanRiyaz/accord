@@ -1,0 +1,43 @@
+#faq{
+    text-align: center;
+    margin: 68px 30px;
+    FONT-SIZE: 46px;
+    font-weight: 100;
+}
+#outer{
+    width: 600px;
+    border-right: 1px solid gray;
+    
+}
+#right{
+    width: 900px;
+    padding: 20px 30px;
+  
+
+}
+#fix{
+    position:absolute;
+    /* border: 2px solid purple; */
+    padding: 58px;
+}
+#main-cont{
+    border-top: 2px solid rgb(26, 27, 26);
+    top: 25px;
+}
+
+h1 a{
+    color:green;
+    font-size: 28px;
+    text-decoration: none;
+}
+.accordion-body{
+    color: rgb(25, 25, 27);
+    font-size: 15px;
+}
+.i-head{
+    margin:44px 20px;
+}
+
+.myclass{
+    text-decoration: underline;
+}
